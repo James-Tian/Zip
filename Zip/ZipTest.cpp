@@ -7,21 +7,21 @@
 
 int main()
 {
-	//Exp1 ½âÑ¹µ½Ö¸¶¨Ä¿Â¼
-	ExtractZipToDir("C:\\Users\\Administrator\\Desktop\\filename.zip", "C:\\Users\\Administrator\\Desktop\\foldername");																								//½âÑ¹µ½µ±Ç°Ä¿Â¼
-	//Exp2 ½âÑ¹µ½µ±Ç°Ä¿Â¼
+	//Exp1 è§£å‹åˆ°æŒ‡å®šç›®å½•
+	ExtractZipToDir("C:\\Users\\Administrator\\Desktop\\filename.zip", "C:\\Users\\Administrator\\Desktop\\foldername");																								//è§£å‹åˆ°å½“å‰ç›®å½•
+	//Exp2 è§£å‹åˆ°å½“å‰ç›®å½•
 	ExtractZipToDir("C:\\Users\\Administrator\\Desktop\\filename.zip");
-	//Exp3 Ñ¹Ëõµ½Ö¸¶¨Ä¿Â¼
-	CompressDirToZip("C:\\Users\\Administrator\\Desktop\\filename.zip", "C:\\Users\\Administrator\\Desktop\\foldername");
-	//Exp4 Ñ¹Ëõµ½µ±Ç°Ä¿Â¼
+	//Exp3 å‹ç¼©åˆ°æŒ‡å®šç›®å½•
+	CompressDirToZip("C:\\Users\\Administrator\\Desktop\\filename", "C:\\Users\\Administrator\\Desktop\\foldername.zip");
+	//Exp4 å‹ç¼©åˆ°å½“å‰ç›®å½•
 	CompressDirToZip("C:\\Users\\Administrator\\Desktop\\filename.zip");
-	//Exp5 Ñ¹Ëõ¶à¸öÄ¿Â¼
+	//Exp5 å‹ç¼©å¤šä¸ªç›®å½•
 	std::vector<std::string> paths;
 	paths.push_back("C:\\Users\\Administrator\\Desktop\\foldername1");
 	paths.push_back("C:\\Users\\Administrator\\Desktop\\foldername2");
 	paths.push_back("C:\\Users\\Administrator\\Desktop\\foldername3");
 	CompressDirToZip(paths, "c:\\users\\administrator\\desktop\\filename.zip");
-	//Exp6 »ñÈ¡zipÑ¹Ëõ¹ı³ÌÖĞµÄ´íÎóĞÅÏ¢²¢Êä³ö
+	//Exp6 è·å–zipå‹ç¼©è¿‡ç¨‹ä¸­çš„é”™è¯¯ä¿¡æ¯å¹¶è¾“å‡º
 	std::cout << GetZipErrorMessage(0);																												
 	system("pause");
 	return 0;
